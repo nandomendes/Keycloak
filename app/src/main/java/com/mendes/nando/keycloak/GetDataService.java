@@ -9,7 +9,7 @@ public interface GetDataService {
 
     //@POST("/auth/realms/demo/protocol/openid-connect/token")
     @FormUrlEncoded
-    @POST("/auth/realms/demo/protocol/openid-connect/auth")
+    @POST("/auth/realms/demo/protocol/openid-connect/token")
     Call<AccessToken> getAccessToken(
             @Field("client_id") String client_id,
             @Field("client_secret") String client_secret,
